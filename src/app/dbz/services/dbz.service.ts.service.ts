@@ -31,7 +31,7 @@ export class DbzServiceTsService {
 
     //this.characters.splice(index, 1);
     deleteCharacterById(id : String ) : void{
+      this.characters = this.characters.filter(character => character.id!==id);
 
-      
 }
 }
